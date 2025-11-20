@@ -47,14 +47,40 @@ Curated opportunities across:
 - Data platforms & analytics
 - Product management (technical/data products)
 
-## 💻 Running Locally
+## Getting Started
 
-### Option 1: Using npx serve (Recommended)
+### Live Demo
+
+The platform runs locally with a simple static server:
+
 ```bash
+# Navigate to the project directory
+cd jobsearch
+
+# Start the local server
 npx -y serve .
 ```
 
-Then open your browser to the URL shown (typically http://localhost:3000)
+Then open your browser to `http://localhost:3000`
+
+### GitHub Repository
+
+**🔗 Live on GitHub:** [https://github.com/afsteve1/CareerVector](https://github.com/afsteve1/CareerVector)
+
+Clone and run locally:
+
+```bash
+# Clone the repository
+git clone https://github.com/afsteve1/CareerVector.git
+
+# Navigate to project
+cd CareerVector
+
+# Start local server
+npx -y serve .
+
+# Open http://localhost:3000 in your browser
+```
 
 ### Option 2: Using Python
 ```bash
