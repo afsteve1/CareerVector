@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personalized job discovery platform for ARRB Project Managers with transportation data expertise">
+  <title>CareerVector - Find Your Perfect Role</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <h1 class="logo">CareerVector</h1>
+      <p class="tagline">AI-Powered Job Discovery for Strategic Leaders</p>
+    </header>
+
+    <!-- Profile Section -->
+    <section class="profile-section">
+      <div class="section-header">
+        <h2 class="section-title">Your Profile</h2>
+      </div>
+      <div class="profile-grid" id="profileGrid">
+        <!-- Profile cards will be dynamically inserted here -->
+      </div>
+    </section>
+
+    <!-- Job Discovery Section -->
+    <section class="jobs-section">
+      <div class="section-header">
+        <h2 class="section-title">Recommended Opportunities</h2>
+        <div class="sort-buttons">
+          <button class="btn active" data-sort="match">Best Match</button>
+          <button class="btn" data-sort="salary">Salary</button>
+          <button class="btn" data-sort="recent">Recent</button>
+        </div>
+      </div>
+
+      <!-- Search and Filters -->
+      <div class="controls">
+        <div class="search-box">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="searchInput" placeholder="Search by title, company, or keywords...">
+        </div>
+        <div class="filter-group">
+          <select id="roleFilter">
+            <option value="all">All Roles</option>
+            <option value="product">Product Management</option>
+            <option value="technical">Technical PM</option>
+            <option value="data">Data & Analytics</option>
+            <option value="infrastructure">Infrastructure</option>
+          </select>
+          <select id="locationFilter">
+            <option value="all">All Locations</option>
+            <option value="remote">Remote</option>
+            <option value="hybrid">Hybrid</option>
+            <option value="onsite">On-site</option>
+          </select>
+          <select id="salaryFilter">
+            <option value="all">All Salaries</option>
+            <option value="100k">$100k+</option>
+            <option value="150k">$150k+</option>
+            <option value="200k">$200k+</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Job Results Count -->
+      <div id="resultsCount" style="margin-bottom: 1rem; color: var(--text-secondary);"></div>
+
+      <!-- Jobs Grid -->
+      <div class="jobs-grid" id="jobsGrid">
+        <!-- Job cards will be dynamically inserted here -->
+      </div>
+    </section>
+
+    <!-- Career Insights Section -->
+    <section class="insights-section">
+      <div class="section-header">
+        <h2 class="section-title">Career Insights</h2>
+      </div>
+      <div class="insights-grid">
+        <div class="insight-card glass-card">
+          <h3 class="insight-title">💡 Your Unique Value</h3>
+          <div class="insight-content">
+            <p>As an INTJ with PM + Data + Technical skills in transportation, you're positioned for high-impact roles that combine:</p>
+            <ul class="insight-list">
+              <li>Strategic planning and execution</li>
+              <li>Data-driven decision making</li>
+              <li>Technical implementation oversight</li>
+              <li>Infrastructure innovation</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="insight-card glass-card">
+          <h3 class="insight-title">🎯 Ideal Role Types</h3>
+          <div class="insight-content">
+            <ul class="insight-list">
+              <li><strong>Technical Product Manager</strong> - Transportation tech, smart cities</li>
+              <li><strong>Data Product Manager</strong> - Analytics platforms, insights tools</li>
+              <li><strong>Solutions Architect</strong> - Infrastructure systems, data pipelines</li>
+              <li><strong>Program Director</strong> - Large-scale technical initiatives</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="insight-card glass-card">
+          <h3 class="insight-title">🚀 Growth Sectors</h3>
+          <div class="insight-content">
+            <ul class="insight-list">
+              <li><strong>Transportation Tech</strong> - Autonomous vehicles, traffic optimization</li>
+              <li><strong>Smart Infrastructure</strong> - IoT sensors, digital twins</li>
+              <li><strong>Mobility Platforms</strong> - Ride-sharing, logistics optimization</li>
+              <li><strong>Data Analytics</strong> - Geospatial analytics, predictive modeling</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
